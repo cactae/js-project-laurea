@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kauppalista</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+</head>
+
+<body>
+  <div id="tuotteista" class="w3-container w3-center">
+    <h2 class="w3-text-green">Tuote:</h2>
+    <input class="w3-hover-green" id="tuotteet" type="text" value="anna tuote" onfocus="this.value=''"><br>
+    <input id="add" class="w3-input w3-red" type="button" value="Lisää listaan" onclick="lisaaTuote()">
+  </div>
+  <div class="w3-container w3-center">
+    <h2 class="w3-text-red">Lista:</h2><br>
+    <ul id="lista" class="w3-ul w3-padding-small">
+      <!-- tuotteet tuleva tähän -->
+    </ul>
+  </div>
+  <div id="tyhjenna">
+    <button onclick="emptyList()">Tyhjennä lista</button>
+  </div>
+</body>
+<footer>
+  <script type="text/javascript" src="script.js"></script>
+</footer>
+</html>
